@@ -1,4 +1,5 @@
 import { Globe2, Ship, Anchor, Briefcase, Map } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function GlobalOperations() {
     const services = [
@@ -25,9 +26,15 @@ export default function GlobalOperations() {
     ];
 
     return (
-        <section id="global-operations" className="py-24 bg-slate-50 scroll-mt-20">
+        <section id="global-operations" className="py-24 bg-white scroll-mt-20">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                <div className="text-center mb-16">
+                <motion.div
+                    className="text-center mb-16"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
                         Global Operations
                     </h2>
@@ -35,9 +42,15 @@ export default function GlobalOperations() {
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto">
                         Connecting producers and consumers across more than 30 countries with efficiency and expertise.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                <motion.div
+                    className="grid lg:grid-cols-2 gap-16 items-center mb-20"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                >
                     <div>
                         <h3 className="text-3xl font-bold text-slate-900 mb-6">Operational Excellence</h3>
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
@@ -60,10 +73,22 @@ export default function GlobalOperations() {
                             <p className="text-sm text-slate-200">Operating across major global trade routes</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <h3 className="text-3xl font-bold text-slate-900 mb-12 text-center">What We Do</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <motion.h3
+                    className="text-3xl font-bold text-slate-900 mb-12 text-center"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >What We Do</motion.h3>
+                <motion.div
+                    className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                >
                     {services.map((service, index) => {
                         const Icon = service.icon;
                         return (
@@ -76,7 +101,7 @@ export default function GlobalOperations() {
                             </div>
                         );
                     })}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

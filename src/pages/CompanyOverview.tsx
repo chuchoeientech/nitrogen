@@ -31,7 +31,7 @@ export default function CompanyOverview() {
         {
             year: 'Present',
             title: 'Industry Leader',
-            description: 'Trading over 20 million tonnes cumulatively across 30+ countries, led by a team with deep industry expertise.',
+            description: 'Trading over 20 million tonnes cumulatively across 20+ countries, led by a team with deep industry expertise.',
         },
     ];
 
@@ -64,7 +64,7 @@ export default function CompanyOverview() {
                         <div className="grid grid-cols-2 gap-6">
                             <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
                                 <Globe className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                                <div className="text-3xl font-bold text-slate-900 mb-1">30+</div>
+                                <div className="text-3xl font-bold text-slate-900 mb-1">2 0+</div>
                                 <div className="text-sm text-slate-600">Countries Served</div>
                             </div>
                             <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center">
