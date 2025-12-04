@@ -1,10 +1,17 @@
 import { Quote, Award, History, Globe } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Leadership() {
   return (
     <section id="leadership" className="py-24 bg-slate-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
             Leadership
           </h2>
@@ -12,9 +19,15 @@ export default function Leadership() {
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Guided by decades of experience and a vision for global excellence.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid lg:grid-cols-12 gap-12 items-start">
+        <motion.div
+          className="grid lg:grid-cols-12 gap-12 items-start"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           {/* Profile Image Column */}
           <div className="lg:col-span-4">
             <div className="sticky top-32">
@@ -22,8 +35,8 @@ export default function Leadership() {
                 <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800')] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-2xl font-bold">David Aitken</h3>
-                  <p className="text-blue-300 font-medium">Founder & Managing Director</p>
+                  <h3 className="text-2xl font-bold text-white">David Aitken</h3>
+                  <p className="text-blue-200 font-medium">Founder & Managing Director</p>
                 </div>
               </div>
 
@@ -105,7 +118,7 @@ export default function Leadership() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

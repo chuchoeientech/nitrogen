@@ -1,4 +1,5 @@
 import { Calendar, Globe, Award, TrendingUp } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function CompanyOverview() {
     const timeline = [
@@ -30,14 +31,20 @@ export default function CompanyOverview() {
         {
             year: 'Present',
             title: 'Industry Leader',
-            description: 'Trading over 20 million tonnes cumulatively across 30+ countries, led by a team with deep industry expertise.',
+            description: 'Trading over 20 million tonnes cumulatively across 20+ countries, led by a team with deep industry expertise.',
         },
     ];
 
     return (
         <section id="company-overview" className="py-24 bg-white scroll-mt-20">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                <div className="text-center mb-16">
+                <motion.div
+                    className="text-center mb-16"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">
                         Company Overview
                     </h2>
@@ -45,13 +52,19 @@ export default function CompanyOverview() {
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto">
                         A legacy of trust, expertise, and strategic growth in the global nitrogen fertilizer market.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-16 mb-24">
+                <motion.div
+                    className="grid lg:grid-cols-2 gap-16 mb-24"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                >
                     <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                         <h3 className="text-3xl font-bold text-slate-900 mb-6">Who We Are</h3>
                         <p>
-                            Nitrogen Agencies Ltd. is a UK-based company specializing in the marketing, trading, and strategic management of nitrogen fertilizers, with a primary focus on urea.
+                            Nitrogen Agencies Ltd. is a UK-based company primarily focused on the trading of nitrogen fertilizers, with granulated urea 46% as our main product.
                         </p>
                         <p>
                             Since our establishment in 2009, we have partnered with producers, distributors, and industrial consumers across the globe—providing reliable market access, tailored commercial strategies, and efficient execution across the entire supply chain.
@@ -61,30 +74,36 @@ export default function CompanyOverview() {
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-6">
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:border-blue-300 transition-colors">
-                            <Globe className="w-10 h-10 text-blue-600 mx-auto mb-4" />
+                        <div className="bg-slate-50 py-6 px-6 rounded-xl border border-slate-100 hover:border-blue-300 transition-colors flex flex-col items-center justify-center text-center">
+                            <Globe className="w-10 h-10 text-blue-600 mx-auto mb-3" />
                             <div className="text-3xl font-bold text-slate-900 mb-1">30+</div>
                             <div className="text-sm text-slate-600">Countries Served</div>
                         </div>
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:border-blue-300 transition-colors">
-                            <TrendingUp className="w-10 h-10 text-blue-600 mx-auto mb-4" />
+                        <div className="bg-slate-50 py-6 px-6 rounded-xl border border-slate-100 hover:border-blue-300 transition-colors flex flex-col items-center justify-center text-center">
+                            <TrendingUp className="w-10 h-10 text-blue-600 mx-auto mb-3" />
                             <div className="text-3xl font-bold text-slate-900 mb-1">20M+</div>
                             <div className="text-sm text-slate-600">Tonnes Traded</div>
                         </div>
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:border-blue-300 transition-colors">
-                            <Calendar className="w-10 h-10 text-blue-600 mx-auto mb-4" />
+                        <div className="bg-slate-50 py-6 px-6 rounded-xl border border-slate-100 hover:border-blue-300 transition-colors flex flex-col items-center justify-center text-center">
+                            <Calendar className="w-10 h-10 text-blue-600 mx-auto mb-3" />
                             <div className="text-3xl font-bold text-slate-900 mb-1">2009</div>
                             <div className="text-sm text-slate-600">Established</div>
                         </div>
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 text-center hover:border-blue-300 transition-colors">
-                            <Award className="w-10 h-10 text-blue-600 mx-auto mb-4" />
+                        <div className="bg-slate-50 py-6 px-6 rounded-xl border border-slate-100 hover:border-blue-300 transition-colors flex flex-col items-center justify-center text-center">
+                            <Award className="w-10 h-10 text-blue-600 mx-auto mb-3" />
                             <div className="text-3xl font-bold text-slate-900 mb-1">40+</div>
                             <div className="text-sm text-slate-600">Years Leadership Exp.</div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <h3 className="text-3xl font-bold text-slate-900 mb-12 text-center">Our Journey</h3>
+                <motion.h3
+                    className="text-3xl font-bold text-slate-900 mb-12 text-center"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >Our Journey</motion.h3>
                 <div className="relative">
                     {/* Vertical Line */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-100 hidden md:block"></div>

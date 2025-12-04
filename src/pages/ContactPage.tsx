@@ -15,7 +15,7 @@ export default function ContactPage() {
 
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                    <div className="grid lg:grid-cols-2 gap-16">
+                    <div className="grid lg:grid-cols-2 gap-16 items-start">
                         {/* Contact Info */}
                         <div className="space-y-12">
                             <div>
@@ -80,9 +80,9 @@ export default function ContactPage() {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-lg">
+                        <div className="bg-slate-50 px-6 pt-6 pb-5 rounded-2xl border border-slate-200 shadow-lg">
                             <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a Message</h3>
-                            <form className="space-y-6">
+                            <form className="space-y-5">
                                 <div className="grid sm:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">First Name</label>
@@ -140,7 +140,7 @@ export default function ContactPage() {
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-600/30"
+                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-600/30"
                                 >
                                     Send Message
                                     <Send className="w-5 h-5" />
