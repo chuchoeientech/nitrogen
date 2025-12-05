@@ -68,7 +68,7 @@ export default function LogisticsSupplyChain() {
                     </div>
 
                     <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-                        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center"></div>
+                        <div className="absolute inset-0 bg-[url('https://www.dnv.com/contentassets/5a26489ae236476f80e2063cc9454f00/ct_bulk_542_bulk_carrier_at_sea.jpg')] bg-cover bg-center"></div>
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                             <div className="flex items-center gap-2 mb-2">
