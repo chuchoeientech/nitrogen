@@ -63,7 +63,11 @@ export default function GlobalOperations() {
                         </div>
                     </div>
                     <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
-                        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2899736/pexels-photo-2899736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center"></div>
+                        <img
+                            src="https://images.pexels.com/photos/2899736/pexels-photo-2899736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Global Shipping and Logistics"
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                             <div className="flex items-center gap-2 mb-2">
