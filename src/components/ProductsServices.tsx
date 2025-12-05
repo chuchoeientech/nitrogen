@@ -34,7 +34,7 @@ export default function ProductsServices() {
                                 <FlaskConical className="w-4 h-4" />
                                 Core Product
                             </div>
-                            <h3 className="text-4xl font-heading font-bold text-secondary-900 mb-6">Urea 46% N</h3>
+                            <h3 className="text-4xl font-heading font-bold text-secondary-900 mb-6">Urea N</h3>
                             <p className="text-xl text-secondary-700 mb-8 leading-relaxed font-light">
                                 We specialize in the global supply of Granular and Prilled Urea, the most widely used nitrogen fertilizer in the world. Our product meets the highest international quality standards.
                             </p>
@@ -44,7 +44,7 @@ export default function ProductsServices() {
                                     <CheckCircle2 className="w-6 h-6 text-primary-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-semibold text-secondary-900">High Nitrogen Content</h4>
-                                        <p className="text-secondary-600">46% minimum nitrogen content for maximum efficiency.</p>
+                                        <p className="text-secondary-600">Minimum nitrogen content for maximum efficiency.</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">

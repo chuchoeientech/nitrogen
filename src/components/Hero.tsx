@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image (external) - consider switching to a local asset for better control */}
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center bg-no-repeat filter brightness-[0.6] saturate-100"></div>
+      <div className="absolute inset-0 bg-[url('https://www.swedishclub.com/uploads/2023/12/Cargo-Ship-iStock_000013022881Large.jpg')] bg-cover bg-center bg-no-repeat filter brightness-[0.6] saturate-100"></div>
 
       {/* Dark overlay to ensure legible text */}
       <div className="absolute inset-0 bg-gradient-to-t from-secondary-900 via-secondary-900/50 to-secondary-900/30"></div>
