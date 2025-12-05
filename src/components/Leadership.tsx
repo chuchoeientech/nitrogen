@@ -32,7 +32,11 @@ export default function Leadership() {
           <div className="lg:col-span-4">
             <div className="sticky top-32">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-8 bg-slate-200 relative group">
-                <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800')] bg-cover bg-center transition-transform duration-500 group-hover:scale-105"></div>
+                <img
+                  src="https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="David Aitken, Founder & Managing Director"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
                   <h3 className="text-2xl font-bold text-white">David Aitken</h3>

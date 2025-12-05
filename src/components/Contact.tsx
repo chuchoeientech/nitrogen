@@ -107,10 +107,10 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-secondary-50 px-6 pt-6 pb-5 rounded-3xl border border-secondary-100 shadow-lg">
+                    <div className="bg-secondary-50 px-6 pt-6 pb-5 rounded-3xl border border-secondary-100 shadow-lg h-full">
                         <h3 className="text-2xl font-heading font-bold text-secondary-900 mb-6">Send us a Message</h3>
-                        <form className="space-y-5">
-                            <div className="grid sm:grid-cols-2 gap-6">
+                        <form className="space-y-14">
+                            <div className="grid lg:grid-cols-2 gap-16 items-start">
                                 <div>
                                     <label htmlFor="firstName" className="block text-sm font-medium text-secondary-700 mb-2">First Name</label>
                                     <input

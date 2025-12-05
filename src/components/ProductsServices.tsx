@@ -66,7 +66,11 @@ export default function ProductsServices() {
 
                         <div className="relative">
                             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-secondary-200">
-                                <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center"></div>
+                                <img
+                                    src="https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="Granular and Prilled Urea Fertilizer"
+                                    className="absolute inset-0 w-full h-full object-cover"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-secondary-900/40 to-transparent"></div>
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-secondary-100 max-w-xs hidden md:block">

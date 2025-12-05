@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,10 +32,10 @@ export default function Navbar() {
     };
 
     const navLinks = [
-        { name: 'Home', id: 'home' },
         { name: 'About', id: 'company-overview' },
         { name: 'Operations', id: 'global-operations' },
         { name: 'Logistics', id: 'logistics-supply-chain' },
+        { name: 'Clients', id: 'clients' },
         { name: 'Products', id: 'products-services' },
         { name: 'Leadership', id: 'leadership' },
         { name: 'Regional Team', id: 'regional-team' },
@@ -53,34 +53,37 @@ export default function Navbar() {
                         onClick={() => scrollToSection('home')}
                         className="flex items-center gap-3 group focus:outline-none"
                     >
-                        <div className="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl shadow-lg shadow-primary-500/20 group-hover:shadow-primary-500/40 transition-all duration-300">
-                            N
-                        </div>
+                        <img src="/nitrogen-logo.png" alt="Nitrogen Agencies" className="w-14 h-14 rounded-lg object-fit shadow-lg transition-all duration-300" />
                         <div className="hidden md:block">
                             <h1 className="text-white font-heading font-bold text-base leading-tight">
                                 Nitrogen Agencies
                             </h1>
-                            <p className="text-primary-300 text-xs font-light">Global Fertilizer Trading</p>
                         </div>
                     </button>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center gap-1">
-                        {navLinks.map((link) => (
-                            <button
-                                key={link.id}
-                                onClick={() => scrollToSection(link.id)}
-                                className={`px-4 py-2 text-sm font-medium transition-all duration-200 ${activeSection === link.id
-                                    ? 'text-primary-400'
-                                    : 'text-secondary-400 hover:text-primary-400'
-                                    }`}
-                            >
-                                {link.name}
-                            </button>
-                        ))}
+                    <div className="hidden lg:flex flex-1 justify-center">
+                        <div className="flex items-center space-x-6">
+                            {navLinks.map((link) => (
+                                <button
+                                    key={link.id}
+                                    onClick={() => scrollToSection(link.id)}
+                                    className={`text-sm font-medium transition-all duration-200 ${activeSection === link.id
+                                        ? 'text-primary-400'
+                                        : 'text-secondary-400 hover:text-primary-400'
+                                        }`}
+                                >
+                                    {link.name}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="hidden lg:flex items-center">
                         <button
                             onClick={() => scrollToSection('contact')}
-                            className="ml-4 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl"
+                            className="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl"
                         >
                             Get in touch
                         </button>
