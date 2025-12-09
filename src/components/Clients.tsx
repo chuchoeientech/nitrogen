@@ -46,12 +46,7 @@ export default function Clients() {
                             key={c.file}
                             className="flex items-center justify-center p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-colors"
                         >
-                            <img
-                                src={`/clients/${c.file}`}
-                                alt={c.name}
-                                className="max-h-12 w-auto object-contain"
-                                loading="lazy"
-                            />
+                            <p>{c.name}</p>
                         </div>
                     ))}
                 </motion.div>
