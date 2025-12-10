@@ -1,6 +1,6 @@
-import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
-import Leadership from '../components/Leadership';
+import Layout from '../components/Layout';
+import RegionalTeam from '../components/RegionalTeam';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 
 const pageVariants = {
@@ -9,7 +9,7 @@ const pageVariants = {
     exit: { opacity: 0, y: 20 },
 };
 
-export default function LeadershipPage() {
+export default function RegionalTeamPage() {
     useScrollToTop();
     return (
         <Layout>
@@ -21,7 +21,7 @@ export default function LeadershipPage() {
                 exit="exit"
                 transition={{ duration: 0.4, ease: 'easeOut' }}
             >
-                <Leadership />
+                <RegionalTeam />
             </motion.div>
         </Layout>
     );

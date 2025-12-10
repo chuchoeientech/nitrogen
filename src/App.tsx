@@ -1,41 +1,51 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import CompanyOverview from './components/CompanyOverview';
-import GlobalOperations from './components/GlobalOperations';
-import LogisticsSupplyChain from './components/LogisticsSupplyChain';
-import ProductsServices from './components/ProductsServices';
-import Leadership from './components/Leadership';
-import RegionalTeam from './components/RegionalTeam';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Clients from './components/Clients';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Preloader from './components/Preloader';
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import OperationsPage from './pages/OperationsPage';
+import LogisticsPage from './pages/LogisticsPage';
+import ClientsPage from './pages/ClientsPage';
+import ProductsPage from './pages/ProductsPage';
+import LeadershipPage from './pages/LeadershipPage';
+import RegionalTeamPage from './pages/RegionalTeamPage';
+import ContactPage from './pages/ContactPage';
+
+function AppContent() {
+  const location = useLocation();
+
+  return (
+    <div className="min-h-screen bg-secondary-50">
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/operations" element={<OperationsPage />} />
+          <Route path="/logistics" element={<LogisticsPage />} />
+          <Route path="/clients" element={<ClientsPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/leadership" element={<LeadershipPage />} />
+          <Route path="/regional-team" element={<RegionalTeamPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </AnimatePresence>
+    </div>
+  );
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="min-h-screen bg-secondary-50">
-      <AnimatePresence mode="wait">
-        {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
-      </AnimatePresence>
-
-      <Navbar />
-      <main>
-        <Hero />
-        <CompanyOverview />
-        <GlobalOperations />
-        <LogisticsSupplyChain />
-        <Clients />
-        <ProductsServices />
-        <Leadership />
-        <RegionalTeam />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+        </AnimatePresence>
+        <AppContent />
+      </div>
+    </Router>
   );
 }
 

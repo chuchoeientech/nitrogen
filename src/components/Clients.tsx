@@ -29,6 +29,7 @@ export default function Clients() {
                     <h2 className="text-3xl sm:text-4xl font-heading font-bold text-slate-900 mb-3">
                         Clients, Suppliers & Receivers
                     </h2>
+                    <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Trusted partners and counterparties across the global supply chain.
                     </p>

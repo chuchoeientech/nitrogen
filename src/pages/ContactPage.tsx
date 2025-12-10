@@ -1,23 +1,39 @@
+import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useScrollToTop } from '../hooks/useScrollToTop';
+
+const pageVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 20 },
+};
 
 export default function ContactPage() {
+    useScrollToTop();
     return (
         <Layout>
-            <div className="pt-24 pb-12 bg-slate-900 text-white">
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                    <h1 className="text-4xl sm:text-5xl font-bold mb-6">Contact Us</h1>
-                    <p className="text-xl text-blue-200 max-w-3xl">
-                        Get in touch with our team for inquiries about global sourcing, distribution, and partnership opportunities.
-                    </p>
-                </div>
-            </div>
+            <motion.div
+                className="pt-24"
+                variants={pageVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+            >
+                <section className="py-24 bg-white">
+                    <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+                        <div className="text-center mb-16">
+                            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">Contact Us</h1>
+                            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                                Get in touch with our team for inquiries about global sourcing, distribution, and partnership opportunities.
+                            </p>
+                        </div>
 
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                    <div className="grid lg:grid-cols-2 gap-16 items-start">
-                        {/* Contact Info */}
-                        <div className="space-y-12">
+                        <div className="grid lg:grid-cols-2 gap-16 items-start">
+                            {/* Contact Info */}
+                            <div className="space-y-12">
                             <div>
                                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Get in Touch</h2>
                                 <p className="text-lg text-slate-600 leading-relaxed">
@@ -147,9 +163,10 @@ export default function ContactPage() {
                                 </button>
                             </form>
                         </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </motion.div>
         </Layout>
     );
 }
