@@ -67,7 +67,7 @@ export default function Navbar() {
                         onClick={handleLogoClick}
                         className="flex items-center gap-3 group focus:outline-none"
                     >
-                        <img src="/nitrogen-logo.png" alt="Nitrogen Agencies" className="w-40 h-40 rounded-lg object-fit transition-all duration-300" />
+                        <img src="/nitrogen-logo.png" alt="Nitrogen Agencies" className="w-40 h-30 pb-4 rounded-lg object-fit transition-all duration-300" />
                     </Link>
 
                     {/* Desktop Navigation */}
