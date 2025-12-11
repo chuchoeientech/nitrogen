@@ -1,5 +1,6 @@
 import { Quote, Award, History, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
+import LeadershipImage from '../../public/david-aitken.jpg'
 
 export default function Leadership() {
   return (
@@ -33,7 +34,7 @@ export default function Leadership() {
             <div className="sticky top-32">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl mb-8 bg-slate-200 relative group">
                 <img
-                  src="https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={LeadershipImage}
                   alt="David Aitken, Founder & Managing Director"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

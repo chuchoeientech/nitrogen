@@ -5,7 +5,7 @@ export default function RegionalTeam() {
     const regions = [
         {
             region: 'North America',
-            name: 'Wyeth Tribue (Chip) Ramsay',
+            name: 'Chip Ramsay',
             description: 'An industry veteran with unrivalled experience in nitrogen fertilizer trading.',
             background: [
                 'Has run trading offices in London, Singapore and New Orleans',

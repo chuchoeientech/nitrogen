@@ -45,8 +45,8 @@ export default function Contact() {
                                 <div>
                                     <h4 className="text-lg font-bold text-secondary-900 mb-1">Email Us</h4>
                                     <p className="text-secondary-600 mb-2">For general inquiries and trade opportunities:</p>
-                                    <a href="mailto:contact@nitrogenagencies.com" className="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                        contact@nitrogenagencies.com
+                                    <a href="mailto:contact@nitrogenagencies.co.uk" className="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+                                        contact@nitrogenagencies.co.uk
                                     </a>
                                 </div>
                             </div>
@@ -83,21 +83,33 @@ export default function Contact() {
                                     <h4 className="text-lg font-bold text-secondary-900 mb-1">Our Locations</h4>
                                     <div className="space-y-4 mt-2">
                                         <div>
-                                            <h5 className="font-semibold text-secondary-800">Registered Address (UK)</h5>
-                                            <p className="text-secondary-600">
-                                                4 Randolph Crescent<br />
-                                                Edinburgh<br />
-                                                United Kingdom<br />
-                                                EH3 7TH
-                                            </p>
+                                            <h5 className="font-semibold text-secondary-800">Headquarters</h5>
+                                            <div className="mt-2 space-y-4 text-secondary-600">
+                                                <div>
+                                                    <h6 className="font-large text-secondary-800">Scotland</h6>
+                                                    <p>
+                                                        4 Randolph Crescent<br />
+                                                        Edinburgh<br />
+                                                        United Kingdom<br />
+                                                        EH3 7TH
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6 className="font-large text-secondary-800">London</h6>
+                                                    <p>
+                                                        29 Farm Street<br />
+                                                        Mayfair<br />
+                                                        London<br />
+                                                        W1J 5RL
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
+
                                         <div>
-                                            <h5 className="font-semibold text-secondary-800">London Office</h5>
-                                            <p className="text-secondary-600">
-                                                29 Farm Street<br />
-                                                Mayfair<br />
-                                                London<br />
-                                                W1J 5RL
+                                            <h5 className="font-semibold text-secondary-800">Global Presence</h5>
+                                            <p className="text-secondary-600 mt-2">
+                                                We are also present in: South America, North America, Central Europe and Asia.
                                             </p>
                                         </div>
                                     </div>
@@ -107,16 +119,16 @@ export default function Contact() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="bg-secondary-50 px-6 pt-6 pb-5 rounded-3xl border border-secondary-100 shadow-lg h-full">
+                    <div className="w-full lg:max-w-lg lg:ml-auto bg-secondary-50 p-8 sm:p-10 rounded-3xl border border-secondary-100 shadow-xl">
                         <h3 className="text-2xl font-heading font-bold text-secondary-900 mb-6">Send us a Message</h3>
-                        <form className="space-y-14">
-                            <div className="grid lg:grid-cols-2 gap-16 items-start">
+                        <form className="space-y-6">
+                            <div className="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label htmlFor="firstName" className="block text-sm font-medium text-secondary-700 mb-2">First Name</label>
                                     <input
                                         type="text"
                                         id="firstName"
-                                        className="w-full px-4 py-3 rounded-xl border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
                                         placeholder="John"
                                     />
                                 </div>
@@ -125,7 +137,7 @@ export default function Contact() {
                                     <input
                                         type="text"
                                         id="lastName"
-                                        className="w-full px-4 py-3 rounded-xl border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
                                         placeholder="Doe"
                                     />
                                 </div>
@@ -136,7 +148,7 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-3 rounded-xl border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
+                                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
                                     placeholder="john@company.com"
                                 />
                             </div>
@@ -145,7 +157,7 @@ export default function Contact() {
                                 <label htmlFor="subject" className="block text-sm font-medium text-secondary-700 mb-2">Subject</label>
                                 <select
                                     id="subject"
-                                    className="w-full px-4 py-3 rounded-xl border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
+                                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all bg-white"
                                 >
                                     <option value="">Select a topic...</option>
                                     <option value="sourcing">Product Sourcing</option>
@@ -159,19 +171,21 @@ export default function Contact() {
                                 <label htmlFor="message" className="block text-sm font-medium text-secondary-700 mb-2">Message</label>
                                 <textarea
                                     id="message"
-                                    rows={4}
-                                    className="w-full px-4 py-3 rounded-xl border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all resize-none bg-white"
+                                    rows={5}
+                                    className="w-full px-4 py-3 rounded-lg border border-secondary-200 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all resize-none bg-white"
                                     placeholder="How can we help you?"
                                 ></textarea>
                             </div>
 
-                            <button
-                                type="submit"
-                                className="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-primary-600/30"
-                            >
-                                Send Message
-                                <Send className="w-5 h-5" />
-                            </button>
+                            <div className="pt-2">
+                                <button
+                                    type="submit"
+                                    className="w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold py-4 rounded-full transition-all duration-300 flex items-center justify-center gap-3 shadow-xl hover:shadow-primary-600/30"
+                                >
+                                    <span>Send Message</span>
+                                    <Send className="w-5 h-5" />
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </motion.div>
