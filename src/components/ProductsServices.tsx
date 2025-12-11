@@ -67,7 +67,7 @@ export default function ProductsServices() {
                         <div className="relative">
                             <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-secondary-200">
                                 <img
-                                    src="https://www.cpm-magazine.co.uk/wp-content/uploads/sites/9/2020/06/Scriv-Spread-fertiliser.jpg"
+                                    src="/tractor.jpg"
                                     alt="Granular and Prilled Urea Fertilizer"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />
