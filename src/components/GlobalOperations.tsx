@@ -55,7 +55,7 @@ export default function GlobalOperations() {
                         <h3 className="text-3xl font-bold text-slate-900 mb-6">Operational Excellence</h3>
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                             <p>
-                                Headquartered in Edinburgh, Scotland, Nitrogen Agencies has built a team of seasoned professionals with extensive commercial and operational expertise.
+                                Headquartered in Edinburgh, Scotland, Nitrogens has built a team of seasoned professionals with extensive commercial and operational expertise.
                             </p>
                             <p>
                                 The group has successfully traded over <span className="font-bold text-blue-700">20 million tonnes</span> of urea across more than <span className="font-bold text-blue-700">30 countries</span>, consistently supporting long-term supply programs, spot opportunities, and strategic market placements.

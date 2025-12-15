@@ -77,10 +77,10 @@ export default function Leadership() {
               <h3 className="text-3xl font-bold text-slate-900 mb-6">A Legacy of Industry Leadership</h3>
               <div className="prose prose-lg text-slate-700 leading-relaxed">
                 <p className="mb-6">
-                  With over <span className="font-bold text-blue-700">40 years of experience</span> in the global fertilizer industry, David Aitken leads Nitrogen Agencies with deep market knowledge and a proven track record of success.
+                  With over <span className="font-bold text-blue-700">40 years of experience</span> in the global fertilizer industry, David Aitken leads Nitrogens with deep market knowledge and a proven track record of success.
                 </p>
                 <p>
-                  His expertise in market intelligence, global sourcing, and structured trading has shaped Nitrogen Agencies into a trusted partner for producers and traders worldwide. Under his leadership, the company has navigated complex market cycles and established itself as a reliable bridge between supply and demand.
+                  His expertise in market intelligence, global sourcing, and structured trading has shaped Nitrogens into a trusted partner for producers and traders worldwide. Under his leadership, the company has navigated complex market cycles and established itself as a reliable bridge between supply and demand.
                 </p>
               </div>
             </div>
@@ -115,10 +115,10 @@ export default function Leadership() {
             <div>
               <h4 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2">
                 <Globe className="w-6 h-6 text-blue-600" />
-                Vision for Nitrogen Agencies
+                Vision for Nitrogens
               </h4>
               <p className="text-lg text-slate-700 leading-relaxed">
-                David founded Nitrogen Agencies Ltd. in 2009 with a clear mission: to provide a more personalized, strategic approach to fertilizer trading. By combining the scale and capability of a large trading house with the agility and focus of a specialized agency, he has built an organization that prioritizes long-term value and partnership over short-term gains.
+                David founded Nitrogens in 2009 with a clear mission: to provide a more personalized, strategic approach to fertilizer trading by combining the scale and capability of a large trading house with the agility and focus of a specialized agency, he has built an organization that prioritizes long-term value and partnership over short-term gains.
               </p>
             </div>
           </div>

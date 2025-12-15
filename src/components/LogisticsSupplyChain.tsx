@@ -45,7 +45,7 @@ export default function LogisticsSupplyChain() {
                             Efficient logistics are fundamental to competitive commodity trading.
                         </p>
                         <p className="text-lg text-slate-700 leading-relaxed">
-                            Nitrogen Agencies maintains strong relationships with:
+                            Nitrogens maintains strong relationships with:
                         </p>
 
                         <div className="space-y-4 pl-6">

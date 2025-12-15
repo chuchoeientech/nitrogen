@@ -7,12 +7,12 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-6">
             <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
-              About Nitrogen Agencies Ltd.
+              About Nitrogen Agencies Ltd. (Nitrogens)
             </h2>
             <div className="w-24 h-1 bg-blue-600"></div>
             <div className="space-y-5 text-lg text-slate-700 leading-relaxed">
               <p>
-                Nitrogen Agencies Ltd. is a British company specialized in the marketing, trading,
+                Nitrogen Agencies Ltd. (Nitrogens) is a British company specialized in the marketing, trading,
                 and strategic management of nitrogen fertilizers, with a primary focus on urea.
               </p>
               <p>

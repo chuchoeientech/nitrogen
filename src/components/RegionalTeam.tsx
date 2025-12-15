@@ -10,7 +10,7 @@ export default function RegionalTeam() {
             background: [
                 'Has run trading offices in London, Singapore and New Orleans',
                 'Set up the marketing division of Brunei Fertiliser Industries\'s 1.5 million tonnes per annum urea factory',
-                'Joined Nitrogen Agencies in 2023, focusing on the United States distribution system in the Mississippi River'
+                'Joined Nitrogens in 2023, focusing on the United States distribution system in the Mississippi River'
             ],
             icon: MapPin,
         },

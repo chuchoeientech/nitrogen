@@ -1,6 +1,6 @@
 {
   "name": "Nitrogen Agencies Ltd.",
-  "short_name": "Nitrogen",
+  "short_name": "Nitrogens",
   "description": "A UK-based leader in global nitrogen fertilizer marketing, distribution and logistics since 2009.",
   "lang": "en-US",
   "start_url": "/",
@@ -12,45 +12,45 @@
   "categories": ["business"],
   "icons": [
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/nitrogens-logo.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-512x512.png",
+      "src": "/nitrogens-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-192x192.png",
+      "src": "/nitrogens-logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "/nitrogens-logo.png",
       "sizes": "32x32",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/favicon-16x16.png",
+      "src": "/nitrogens-logo.png",
       "sizes": "16x16",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/nitrogen.svg",
+      "src": "/nitrogens-logo.png",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/safari-pinned-tab.svg",
+      "src": "/nitrogens-logo.png",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ]

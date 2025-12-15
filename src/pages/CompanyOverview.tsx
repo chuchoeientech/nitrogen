@@ -6,7 +6,7 @@ export default function CompanyOverview() {
         {
             year: '2009',
             title: 'Establishment',
-            description: 'Nitrogen Agencies Ltd. was founded in the UK with a vision to bridge the gap between producers and industrial consumers in the nitrogen market.',
+            description: 'Nitrogens was founded in the UK with a vision to bridge the gap between producers and industrial consumers in the nitrogen market.',
         },
         {
             year: '2012',
@@ -52,7 +52,7 @@ export default function CompanyOverview() {
                         <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">Who We Are</h2>
                             <p>
-                                Nitrogen Agencies Ltd. is a UK-based company specializing in the marketing, trading, and strategic management of nitrogen fertilizers, with a primary focus on urea.
+                                Nitrogens is a UK-based company specializing in the marketing, trading, and strategic management of nitrogen fertilizers, with a primary focus on urea.
                             </p>
                             <p>
                                 Since our establishment in 2009, we have partnered with producers, distributors, and industrial consumers across the globe—providing reliable market access, tailored commercial strategies, and efficient execution across the entire supply chain.

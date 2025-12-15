@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-6">
           {/* Company Info */}
           <div className="lg:max-w-md">
-            <h3 className="text-2xl font-heading font-bold mb-2 text-white">Nitrogen Agencies Ltd.</h3>
+            <h3 className="text-2xl font-heading font-bold mb-2 text-white">Nitrogen Agencies Ltd. (Nitrogens)</h3>
             <p className="text-primary-200 text-base font-light">
               Global Nitrogen Fertilizer Trading, Distribution, and Logistics.
             </p>
@@ -18,13 +18,13 @@ export default function Footer() {
             <h4 className="text-lg font-heading font-semibold mb-4">Contact Us</h4>
             <div className="space-y-3">
               <a
-                href="mailto:contact@nitrogenagencies.co.uk"
+                href="mailto:contact@nitrogens.uk"
                 className="flex items-center gap-3 text-secondary-300 hover:text-white transition-colors group"
               >
                 <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center group-hover:bg-primary-500 transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span>contact@nitrogenagencies.co.uk</span>
+                <span>contact@nitrogens.uk</span>
               </a>
 
               <div className="space-y-2">
@@ -71,7 +71,7 @@ export default function Footer() {
 
         <div className="pt-6 border-t border-secondary-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-secondary-400 text-sm">
-            <p className="text-white">&copy; {new Date().getFullYear()} Nitrogen Agencies Ltd. All rights reserved.</p>
+            <p className="text-white">&copy; {new Date().getFullYear()} Nitrogens | All rights reserved.</p>
             <p>Registered in England and Wales</p>
             <p>Developed by <a href="https://eientech.io" className='hover:text-primary-400 transition-colors'>eien</a></p>
           </div>

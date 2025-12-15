@@ -45,8 +45,8 @@ export default function Contact() {
                                 <div>
                                     <h4 className="text-lg font-bold text-secondary-900 mb-1">Email Us</h4>
                                     <p className="text-secondary-600 mb-2">For general inquiries and trade opportunities:</p>
-                                    <a href="mailto:contact@nitrogenagencies.co.uk" className="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
-                                        contact@nitrogenagencies.co.uk
+                                    <a href="mailto:contact@nitrogens.uk" className="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+                                      contact@nitrogens.uk
                                     </a>
                                 </div>
                             </div>
