@@ -1,5 +1,22 @@
-import { Quote, Award, History, Globe } from 'lucide-react';
+import { Quote, Award, History, Globe, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+
+const teamMembers = [
+  {
+    name: 'Chip Ramsay',
+    role: 'Director',
+    image: '/chip-ramsay.jpeg',
+    expertise: ['Business Development', 'Client Relations', 'Market Strategy'],
+    imageStyle: 'scale-110',
+  },
+  {
+    name: 'Walter Stumpf',
+    role: 'Director',
+    image: '/walter-stumpf.png',
+    expertise: ['Operations Management', 'Supply Chain', 'Industry Partnerships'],
+    imageStyle: '',
+  },
+];
 
 export default function Leadership() {
   return (
@@ -121,6 +138,65 @@ export default function Leadership() {
                 David founded Nitrogens in 2009 with a clear mission: to provide a more personalized, strategic approach to fertilizer trading by combining the scale and capability of a large trading house with the agility and focus of a specialized agency, he has built an organization that prioritizes long-term value and partnership over short-term gains.
               </p>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Leadership Team Section */}
+        <motion.div
+          className="mt-24"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-slate-900 mb-4 flex items-center justify-center gap-3">
+              <Users className="w-8 h-8 text-blue-600" />
+              Leadership Team
+            </h3>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Our experienced directors bring decades of industry expertise to drive Nitrogens forward.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {teamMembers.map((member, index) => (
+              <motion.div
+                key={member.name}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+              >
+                <div className="aspect-[4/3] relative overflow-hidden bg-slate-200">
+                  <img
+                    src={member.image}
+                    alt={`${member.name}, ${member.role}`}
+                    className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 ${member.imageStyle}`}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h4 className="text-xl font-bold text-white">{member.name}</h4>
+                    <p className="text-blue-200 font-medium">{member.role}</p>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h5 className="font-semibold text-slate-900 mb-3 flex items-center gap-2 text-sm">
+                    <Award className="w-4 h-4 text-blue-600" />
+                    Key Expertise
+                  </h5>
+                  <ul className="space-y-2">
+                    {member.expertise.map((item) => (
+                      <li key={item} className="flex items-center gap-2 text-slate-600 text-sm">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
