@@ -5,16 +5,16 @@ const teamMembers = [
   {
     name: 'Chip Ramsay',
     role: 'Director',
-    image: '/chip-ramsay.jpeg',
+    image: '/chip-ramsay.png',
     expertise: ['Business Development', 'Client Relations', 'Market Strategy'],
-    imageStyle: 'scale-110',
+    imageStyle: '',
   },
   {
     name: 'Walter Stumpf',
     role: 'Director',
-    image: '/walter-stumpf.png',
+    image: '/walter-stumpf.jpeg',
     expertise: ['Operations Management', 'Supply Chain', 'Industry Partnerships'],
-    imageStyle: '',
+    imageStyle: 'scale-110',
   },
 ];
 
