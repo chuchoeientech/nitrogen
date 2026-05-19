@@ -4,8 +4,8 @@ import CompanyOverview from '../components/CompanyOverview';
 import GlobalOperations from '../components/GlobalOperations';
 import LogisticsSupplyChain from '../components/LogisticsSupplyChain';
 import ProductsServices from '../components/ProductsServices';
-import Leadership from '../components/Leadership';
-import RegionalTeam from '../components/RegionalTeam';
+// import Leadership from '../components/Leadership';
+// import RegionalTeam from '../components/RegionalTeam';
 import Contact from '../components/Contact';
 import Clients from '../components/Clients';
 
@@ -33,9 +33,9 @@ export default function Home() {
             {/*<div id="leadership">
                 <Leadership />
             </div>*/}
-            <div id="regional-team">
+            {/*<div id="regional-team">
                 <RegionalTeam />
-            </div>
+            </div>*/}
             <div id="contact">
                 <Contact />
             </div>

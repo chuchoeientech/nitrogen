@@ -143,7 +143,7 @@ function AppContent() {
           <Route path="/clients" element={<ClientsPage />} />
           <Route path="/products" element={<ProductsPage />} />
           {/*<Route path="/leadership" element={<LeadershipPage />} />*/}
-          <Route path="/regional-team" element={<RegionalTeamPage />} />
+          {/*<Route path="/regional-team" element={<RegionalTeamPage />} />*/}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

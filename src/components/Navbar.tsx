@@ -11,7 +11,7 @@ export default function Navbar() {
         const handleScroll = () => {
             // Solo trackear scroll en la home
             if (location.pathname === '/') {
-                const sections = ['home', 'company-overview', 'global-operations', 'logistics-supply-chain', 'clients', 'products-services', 'leadership', 'regional-team', 'contact'];
+                const sections = ['home', 'company-overview', 'global-operations', 'logistics-supply-chain', 'clients', 'products-services', 'contact'];
                 for (const section of sections) {
                     const element = document.getElementById(section);
                     if (element) {
@@ -36,7 +36,7 @@ export default function Navbar() {
         { name: 'Clients', id: 'clients', path: '/clients' },
         { name: 'Products', id: 'products-services', path: '/products' },
         // { name: 'Leadership', id: 'leadership', path: '/leadership' },
-        { name: 'Regional Team', id: 'regional-team', path: '/regional-team' },
+        // { name: 'Regional Team', id: 'regional-team', path: '/regional-team' },
     ];
 
     const isLinkActive = (path: string, sectionId: string) => {
