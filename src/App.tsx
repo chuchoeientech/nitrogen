@@ -117,7 +117,7 @@
 // ---- NORMAL APP (commented out) ----
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
@@ -145,6 +145,7 @@ function AppContent() {
           {/*<Route path="/leadership" element={<LeadershipPage />} />*/}
           <Route path="/regional-team" element={<RegionalTeamPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AnimatePresence>
     </div>
