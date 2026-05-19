@@ -30,9 +30,9 @@ export default function Home() {
             <div id="products-services">
                 <ProductsServices />
             </div>
-            <div id="leadership">
+            {/*<div id="leadership">
                 <Leadership />
-            </div>
+            </div>*/}
             <div id="regional-team">
                 <RegionalTeam />
             </div>

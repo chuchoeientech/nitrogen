@@ -35,7 +35,7 @@ export default function Navbar() {
         { name: 'Logistics', id: 'logistics-supply-chain', path: '/logistics' },
         { name: 'Clients', id: 'clients', path: '/clients' },
         { name: 'Products', id: 'products-services', path: '/products' },
-        { name: 'Leadership', id: 'leadership', path: '/leadership' },
+        // { name: 'Leadership', id: 'leadership', path: '/leadership' },
         { name: 'Regional Team', id: 'regional-team', path: '/regional-team' },
     ];
 
