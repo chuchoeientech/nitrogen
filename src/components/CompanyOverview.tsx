@@ -64,13 +64,13 @@ export default function CompanyOverview() {
                     <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
                         <h3 className="text-3xl font-bold text-slate-900 mb-6">Who We Are</h3>
                         <p>
-                            Nitrogen Agencies Ltd. (Nitrogens) is a UK-based company primarily focused on the trading of nitrogen fertilizers, with granulated urea 46% as our main product.
+                            Nitrogen Agencies Ltd. (Nitrogens) is a UK-based company primarily focused on the trading of nitrogen fertilizers, with granulated urea as our main product.
                         </p>
                         <p>
                             Since our establishment in 2009, we have partnered with producers, distributors, and industrial consumers across the globe—providing reliable market access, tailored commercial strategies, and efficient execution across the entire supply chain.
                         </p>
                         <p>
-                            We are headquartered in Ediburgh, Scotland, and operate with an international mindset, delivering value-driven solutions to long-term partners worldwide.
+                            We are headquartered in Edinburgh, Scotland, and operate with an international mindset, delivering value-driven solutions to long-term partners worldwide.
                         </p>
                     </div>
                     <div className="grid grid-cols-2 gap-6">

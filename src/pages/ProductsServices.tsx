@@ -22,7 +22,7 @@ export default function ProductsServices() {
                                     <FlaskConical className="w-4 h-4" />
                                     Core Product
                                 </div>
-                                <h2 className="text-4xl font-bold text-slate-900 mb-6">Urea 46% N</h2>
+                                <h2 className="text-4xl font-bold text-slate-900 mb-6">Urea</h2>
                                 <p className="text-xl text-slate-700 mb-8 leading-relaxed">
                                     We specialize in the global supply of Granular and Prilled Urea, the most widely used nitrogen fertilizer in the world. Our product meets the highest international quality standards.
                                 </p>
